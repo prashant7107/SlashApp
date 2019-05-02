@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/studentProfile_activity_drawer"
+    tools:context="education.slash.slash.view.StudentProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_student_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/profile_backgroud"
+        android:padding="10dp">
+
+
+        <include layout="@layout/progress_bar"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView_student_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/profile_cardview_backgroud"
+            android:elevation="60dp"
+            app:cardCornerRadius="30dp"
+            android:nestedScrollingEnabled="true"
+            >
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentName"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentProfile_hdr_name"
+                        android:layout_weight="3.2"
+                        android:text="@string/name"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_name"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentDob"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentProfile_hdr_Dob"
+                        android:layout_weight="3.2"
+                        android:text="@string/DOB"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_Dob"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentGender"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentProfile_hdr_gender"
+                        android:layout_weight="3.2"
+                        android:text="@string/gender"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_gender"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentEducation"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentProfile_hdr_education"
+                        android:layout_weight="3.2"
+                        android:text="@string/educationlvl"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_education"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentSubjects"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:id="@+id/studentProfile_hdr_subjects"
+                        android:text="@string/subject"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_subjects"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentCode"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/studentProfile_hdr_code"
+                        android:layout_weight="3.2"
+                        android:text="@string/code"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_code"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentEntryDate"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:id="@+id/studentProfile_hdr_entryDate"
+                        android:text="@string/entrydate"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_entryDate"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentStartDate"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:id="@+id/studentProfile_hdr_startDate"
+                        android:text="@string/startDate"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_startDate"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentCourseTime"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:id="@+id/studentProfile_hdr_courseTime"
+                        android:text="@string/courseTime"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_courseTime"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentPaidCharge"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.7"
+                        android:id="@+id/studentProfile_hdr_paidCharge"
+                        android:text="@string/paidCharge"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:id="@+id/studentProfile_paidCharge"
+                        style="@style/Profile_textview_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:hint="@string/loading" />
+
+                    <TextView
+                        android:id="@+id/studentProfile_PaymentHistory"
+                        android:layout_toRightOf="@id/studentProfile_paidCharge"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="italic"
+                        android:textSize="10dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.7"
+                        android:text="@string/PaymentHistory"
+                        android:clickable="true"
+                        android:visibility="invisible"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentCharge"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:id="@+id/studentProfile_hdr_charge"
+                        android:text="@string/charge"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_charge"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentEmail"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:text="@string/email"
+                        android:id="@+id/studentProfile_hdr_email"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_email"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:freezesText="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentPendingCharge"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:id="@+id/studentProfile_hdr_pendingCharge"
+                        android:text="@string/pendingCharge"
+                        style="@style/Profile_textview_headers"
+                        />
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_pendingCharge"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlStudentContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:baselineAligned="false"
+                        android:id="@+id/studentProfile_hdr_contact"
+                        android:text="@string/contact"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:id="@+id/studentProfile_contact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentRemarks"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:text="@string/remarks"
+                        android:id="@+id/studentProfile_hdr_remarks"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_remarks"
+                        android:hint="@string/loading"
+                        android:maxLines="3"
+                        style="@style/Profile_textview_value"
+
+
+                        android:scrollbars="vertical"
+                        android:scrollIndicators="right"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbarSize="10dp"
+                        android:scrollbarFadeDuration="100000"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentAddress"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:text="@string/address"
+                        android:id="@+id/studentProfile_hdr_address"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_address"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:freezesText="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentTeacher"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:text="@string/teacher"
+                        android:id="@+id/studentProfile_hdr_teacher"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_teacher"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+
+
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:freezesText="true"
+                        android:focusableInTouchMode="true"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lnlStudentStatus"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3.2"
+                        android:text="@string/status"
+                        android:id="@+id/studentProfile_hdr_status"
+                        style="@style/Profile_textview_headers"
+                        />
+
+                    <include layout="@layout/semi_coln"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:id="@+id/studentProfile_status"
+                        android:hint="@string/loading"
+                        style="@style/Profile_textview_value"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/navigation_view"/>
+
+
+</android.support.v4.widget.DrawerLayout>

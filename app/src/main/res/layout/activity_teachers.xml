@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/teacher_activity_drawer"
+    tools:context="education.slash.slash.view.Teacher.TeachersActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="3dp">
+        <android.support.design.widget.TabLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/teacher_tabLayout"
+            app:tabIndicatorColor="@color/tabIndicatorColor"
+            app:tabIndicatorHeight="3dp"
+            android:background="@color/tabbarBackgroud"
+            app:tabTextColor="@color/tabTextColor"
+            app:tabSelectedTextColor="@color/tabSelectedTextColor"
+            android:minHeight="?android:attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/teachers_viewpager"
+            >
+
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+    <include layout="@layout/navigation_view"/>
+
+</android.support.v4.widget.DrawerLayout>

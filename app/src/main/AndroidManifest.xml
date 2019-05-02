@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="education.slash.slash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_slash"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.MainActivity" />
+        <activity android:name=".view.Subjects.SubjectsActivity" />
+        <activity android:name=".view.Teacher.TeachersActivity" />
+        <activity android:name=".view.TeacherProfileActivity">
+            <intent-filter>
+                <action android:name="com.android.main.TEACHERPROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.Student.StudentActivity" />
+        <activity android:name=".view.StudentProfileActivity">
+            <intent-filter>
+                <action android:name="com.android.main.STUDENTPROFILE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.StudentPaymentHistoryActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.StudentPartialActivity">
+            <intent-filter>
+                <action android:name="com.android.main.STUDENTPARTIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.PendingChargeActivity" />
+        <activity android:name=".view.Income.IncomeActivity"></activity>
+    </application>
+
+</manifest>

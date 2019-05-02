@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="menuColorPrimary">#795548</color>
+    <color name="menuColorPrimaryDark">#5D4037</color>
+    <color name="menuWhite">#ffffff</color>
+    <color name="menuDarkGray">#6c6c6c</color>
+    <color name="title_bg">#e04006</color>
+    <color name="title_bg_dark">#ce2405</color>
+    <color name="title_thirdAccent">#0584ce</color>
+    <color name="slash_green">#16e539</color>
+    <color name="slash_orange">#f26813</color>
+    <color name="active_heading_text">#000577</color>
+    <color name="active_status_text">#4b4d7a</color>
+    <color name="active_layout_background">#faf7fc</color>
+    <color name="inactive_heading_text">#443d44</color>
+    <color name="inactive_status_text">#636363</color>
+    <color name="inactive_layout_background">#f2f2f2</color>
+    <color name="profile_backgroud">#f3edf7</color>
+    <color name="profile_cardview_backgroud">#eae3ef</color>
+    <color name="profile_header">#0f8e37</color>
+    <color name="profle_values">#0f6e8e</color>
+    <color name="profile_semicolon">#098c32</color>
+    <color name="tabIndicatorColor">#ff2e00</color>
+    <color name="tabTextColor">#ffffff</color>
+    <color name="tabSelectedTextColor">#ddbffc</color>
+    <color name="tabbarBackgroud">#1975a0</color>
+    <color name="payment_background">#fcf2e0</color>
+    <color name="payment_text">#2b5906</color>
+    <color name="ammount_background_one">#b1bfd6</color>
+    <color name="ammount_background_two">#c5d6b1</color>
+</resources>

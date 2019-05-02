@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Slash</string>
+    <string name="active">Active</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="courses">Course</string>
+    <string name="income">Income</string>
+    <string name="pending">Pending</string>
+    <string name="slash">Slash Education Foundation</string>
+    <string name="sef">SEF</string>
+    <string name="slashms">Slash Records</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="all">All</string>
+    <string name="inactive">Inactive</string>
+    <string name="name">Name</string>
+    <string name="contact">Contact</string>
+    <string name="subject">Subjects</string>
+    <string name="email">Email</string>
+    <string name="remarks">Remarks</string>
+    <string name="status">Status</string>
+    <string name="loading">Loading . . .</string>
+    <string name="DOB">DOB</string>
+    <string name="gender">Gender</string>
+    <string name="educationlvl">Education Level</string>
+    <string name="code">code</string>
+    <string name="entrydate">Entry Date</string>
+    <string name="courseTime">Course Time</string>
+    <string name="paidCharge">Paid Charge</string>
+    <string name="charge">Charge</string>
+    <string name="pendingCharge">Pending Charge</string>
+    <string name="address">Address</string>
+    <string name="startDate">Start Date</string>
+    <string name="PaymentHistory">Payment History</string>
+    <string name="studentList">Students List</string>
+    <string name="noStudents">No Students !!</string>
+    <string name="paidDate">Pay Date</string>
+    <string name="clickGenerate">Select Date and Click on Generate</string>
+    <string name="pickDate">Select Another Date</string>
+    <string name="totalincomecharge">Total Income Amount = Rs </string>
+    <string name="totalpendingCharge">Total Pending Amount = Rs </string>
+
+</resources>

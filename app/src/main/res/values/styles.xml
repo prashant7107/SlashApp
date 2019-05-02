@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/SlashTextView</item>
+        <item name="actionBarSize">@dimen/title_bar_size</item>
+        <item name="android:textSize">@dimen/title_bar_text_size</item>
+        <item name="colorPrimary">@color/title_bg</item>
+        <item name="colorPrimaryDark">@color/title_bg_dark</item>
+        <item name="colorAccent">@color/title_thirdAccent</item>
+    </style>
+    <style name="Home_Card_View" parent="CardView">
+        <item name="cardElevation">30dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="cardBackgroundColor">#b8cef2</item>
+        <item name="cardCornerRadius">40dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    
+    <style name="Home_Text_View" parent="android:Widget.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">30dp</item>
+    </style>
+
+
+    <dimen name="title_bar_size">50dp</dimen>
+    <dimen name="title_bar_text_size">25dp</dimen>
+
+
+    <style name="menu_text_style" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Menu">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="Profile_textview_headers">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/profile_header</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Profile_textview_value">
+        <item name="android:textSize">15dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:textColor">@color/profle_values</item>
+    </style>
+
+    <style name="SlashTextView">
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="PendingCharge_Header">
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:background">#d1c9b3</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor"> #3d5a72</item>
+    </style>
+
+
+</resources>

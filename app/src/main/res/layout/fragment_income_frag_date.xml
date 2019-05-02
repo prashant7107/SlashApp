@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Income.IncomeFragDate">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/incrom_frag_text_hideDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pickDate"
+        android:visibility="invisible"
+        />
+<LinearLayout
+    android:id="@+id/incrom_frag_date_datepickers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@color/menuDarkGray">
+   <TextView
+       android:id="@+id/IncomeFromDate"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="4"
+       android:layout_marginLeft="20dp"
+    android:hint="Select Date From"
+       android:gravity="center"
+    />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:hint=" - "
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/IncomeToDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:hint="Select Date to"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/IncomeDateGenerate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:hint="Generate"
+        android:gravity="center"
+        />
+
+</LinearLayout>
+</RelativeLayout>
+    <include layout="@layout/income_frags"></include>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<group android:checkableBehavior="single" android:id="@+id/grpHome">
+    <item android:id="@+id/mnHome" android:title="@string/home" android:icon="@drawable/ic_menu_home" /> </group>
+    <group android:checkableBehavior="single" android:id="@+id/grpStudent">
+        <item android:id="@+id/mnStudent" android:title="@string/student" android:icon="@drawable/ic_menu_student"/></group>
+    <group android:checkableBehavior="single" android:id="@+id/grpTeacher">
+        <item android:id="@+id/mnTeacher" android:title="@string/teacher" android:icon="@drawable/ic_menu_teacher"/></group>
+    <group android:checkableBehavior="single" android:id="@+id/grpCourse">
+        <item android:id="@+id/mnCourses" android:title="@string/courses" android:icon="@drawable/ic_menu_course"/></group>
+    <group android:checkableBehavior="single" android:id="@+id/grpIncome">
+        <item android:id="@+id/mnIncome" android:title="@string/income" android:icon="@drawable/ic_menu_income"/></group>
+    <group android:checkableBehavior="single" android:id="@+id/grpPending">
+        <item android:id="@+id/mnPending" android:title="@string/pending" android:icon="@drawable/ic_menu_pending"/></group>
+</menu>

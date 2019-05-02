@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearLayoutIncomeFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="@string/name"
+                style="@style/PendingCharge_Header"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="@string/paidCharge"
+                style="@style/PendingCharge_Header"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="@string/paidDate"
+                style="@style/PendingCharge_Header"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                android:id="@+id/txtTotalIncomeAmmountHdr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/totalincomecharge"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:id="@+id/txtTotalIncomeAmmount"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/progress_bar"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvIncomeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/IncomeBeforeClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_centerInParent="true"
+                android:textColor="#6039cc"
+                android:hint="@string/clickGenerate"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
